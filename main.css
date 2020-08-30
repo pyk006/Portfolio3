@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Playfair+Display&display=swap');
-{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: ''Playfair Display'', sans-serif;
 }
 
 html {
@@ -31,10 +31,21 @@ nav{
     justify-content: space-around;
     width: 30%;
 }
-img{
-    width: 100%;
+img[src="Images/PK.png"] {
+    width: 50%;
     max-width: 100%;
     height: auto;
+}
+
+img[src="Images/Projects.PNG"] {
+    width: 80%;
+    max-width: 100%;
+    height:auto;
+}
+
+img[src="Images/img.PNG"] {
+    width: 40%;
+    max-height: 80%;
 }
 
 
@@ -61,7 +72,8 @@ img{
 }
 
 .main-info-section,
-.project-info {
+.project-info,
+.project-info2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -178,7 +190,7 @@ span.m-left {
     box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
     padding: 50px;
     position: relative;
-    top: -70px;
+    top: -10px;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
@@ -206,7 +218,13 @@ span.m-left {
     opacity: 0.5;
 }
 
-.project-info {
+.btn {
+    padding: 10px 0;
+    color: red;
+    cursor: pointer;
+}
+.project-info,
+.project-info2 {
     font-size: 1.4rem;
     color: #BEBEBE;
     max-width: 900px;
@@ -216,7 +234,10 @@ span.m-left {
     transform: translateX(-50%);
     text-align: center;
     margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
 }
+
 
 .html {
     display: flex;
@@ -227,7 +248,7 @@ span.m-left {
 
 
 .contact {
-    margin-top: 50px;
+    margin-top: 600px;
 }
 
 form input,
@@ -235,20 +256,20 @@ form textarea {
     display: block;
     width: 500px;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #2a384b;
     border: 3px solid #707070;
     outline: none;
     font-size: 1.2rem;
-    color: rgb(22, 22, 22);
+    color: rgb(85, 161, 184);
     position: relative;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
 }
 
-form input: last-child {
+form input:last-child {
     width: 150px;
-    background-color: #ED5565;
+    background-color: #ffffff;
     border: none;
     cursor: pointer;
 }
